@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#050b20">
+  <title>GALAXY SHOOT — Mobile Auto Fire</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <main class="page">
+    <header>
+      <h1>GALAXY <span>SHOOT</span></h1>
+      <p>AUTO FIRE · DRAG TO MOVE · PERFECT PARRY</p>
+    </header>
+    <div class="frame">
+      <canvas id="game" width="960" height="720" aria-label="우주 슈팅 게임: 마우스나 터치 드래그로 이동" tabindex="0"></canvas>
+    </div>
+    <div class="actions">
+      <button type="button" id="start-button">게임 시작 / 다시 시작</button>
+      <button type="button" id="parry-button" disabled>패링</button>
+      <button type="button" id="pause-button">일시정지</button>
+      <span id="game-status" aria-live="polite"></span>
+    </div>
+    <p class="controls">마우스 이동 / 터치 드래그 : 우주선 조종 · 총알 자동 발사 · <kbd>SHIFT</kbd> 또는 패링 버튼 · <kbd>P</kbd> 일시정지 · <kbd>R</kbd> 재시작</p>
+  </main>
+  <script src="./sketch.js"></script>
+</body>
+</html>
